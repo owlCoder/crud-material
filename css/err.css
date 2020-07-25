@@ -1,0 +1,33 @@
+#okv
+{
+	border: 1px #fff solid !important;
+    border-radius: 25px !important;
+	background-color: #fff;
+	
+	margin-top: 8rem !important;
+	margin-left: 2rem !important;
+	margin-right: 2rem !important;
+	
+}
+
+#errImg
+{
+	border: 1px #fff solid !important;
+    border-radius: 25px !important;
+	background-color: #fff;
+}
+
+body
+{
+	background: url('../img/err.jpg');
+}
+
+
+@media only screen and (min-width: 768px) {
+	#okv
+	{
+		margin-top: 7rem !important;
+		margin-left: 16rem !important;
+		margin-right: 16rem !important;
+	}
+}
