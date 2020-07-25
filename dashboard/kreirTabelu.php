@@ -19,6 +19,28 @@
       <link href="vendor/select2/select2.min.css" rel="stylesheet" media="all">
       <link href="vendor/perfect-scrollbar/perfect-scrollbar.css" rel="stylesheet" media="all">
       <link href="css/theme.css" rel="stylesheet" media="all">
+	  
+	  <style>
+	  ::-webkit-scrollbar {
+  width: 0px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: transparent; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: transparent; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: transparent; 
+}
+</style>
+
    </head>
    <body class="animsition">
       <!-- MAIN CONTENT-->
@@ -33,12 +55,16 @@
                            <small> Nove Tabele</small>
                         </div>
                         <div class="card-body card-block">
-                           <form name="add_name" id="add_name">
+                           <form name="add_name" id="add_name" method="POST" action="kreiraj.php">
                               <div class="table-responsive">
                                  <table class="table pb-3" id="dynamic_field">
                                     <tr>
                                        <td style="border-top: 0px #fff solid !important;">
                                           <input type="text" name="nazivTabele" placeholder="Unesite naziv tabele koju bi da kreirate" class="form-control" />
+                                       </td>
+									   <td style="border-top: 0px #fff solid !important;">
+                                          <label style="text-align: right; clear: both; float:left; margin-right:15px;">Trenutni broj kolona:</label>
+										  <input type="text" name="brKolona" id="brKolona" readonly="true" class="form-control col-lg-1" value="1"/>
                                        </td>
                                     </tr>
                                     <tr>
@@ -88,13 +114,15 @@
               $('#add').click(function(){  
                    i++;  
                    $('#dynamic_field').append('<tr id="row'+i+'"><td style="border-top: 0px #fff solid !important;"><div class="form-group"><input type="text" id="'+i+'" name="'+i+'" class="form-control" placeholder="Kolona2 TipPodatka(Dužina)"></div></td></tr>');  
-              });  
+				   $('#brKolona').val(i);
+			  });  
 			  $('#last').click(function(){  
 				   $('.blokiraj').prop('disabled', true);
 				   $('.poslKol').prop('disabled', true);
                    i++;  
                    $('#dynamic_field').append('<tr id="row'+i+'"><td style="border-top: 0px #fff solid !important;"><div class="form-group"><input type="text" id="'+i+'" name="'+i+'" class="form-control" placeholder="Kolona2 TipPodatka(Dužina)"></div></td><td style="border-top: 0px #fff solid !important;"><button type="button" name="remove" id="'+i+'" class="btn btn-danger btn_remove">Ukloni kolonu</button></td></tr>');  
 				   $('#dynamic_field').append('<tr id="sendData"><td style="border-top: 0px #fff solid !important;"><input type="button" name="submit" id="submit" class="btn btn-info" value="Kreiranje tabele" /></td></tr>');
+			  $('#brKolona').val(i);
 			  });  
               $(document).on('click', '.btn_remove', function(){  
                    var button_id = $(this).attr("id");   
@@ -103,6 +131,7 @@
 				   $('.blokiraj').prop('disabled', false);
 				   $('.poslKol').prop('disabled', false);
 				   $('#sendData').remove();
+				   $('#brKolona').val(i);
               });    
          });  
       </script>
