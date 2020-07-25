@@ -41,6 +41,28 @@ else {
             }
       </script>
 	  
+	  <style>
+	  ::-webkit-scrollbar {
+  width: 0px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: transparent; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: transparent; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: transparent; 
+}
+
+	  </style>
+	  
 	 
 </head>
 
@@ -69,7 +91,7 @@ else {
                     <ul class="navbar-mobile__list list-unstyled">
                         <li class="has-sub">
                             <a class="js-arrow animsition" href="#" onclick="uri('dashboard/uvod.php');">
-                                <i class="fas fa-tachometer-alt"></i>Dashboard</a>
+                                <i class="fas fa-home"></i>Pregled</a>
                           
                         </li>
                         <li>
@@ -77,22 +99,23 @@ else {
                                 <i class="fa fa-table"></i>Kreiranje tabele</a>
                         </li>
                         <li>
-                            <a href="table.html">
-                                <i class="fas fa-table"></i>Tables</a>
+                            <a href="#" onclick="uri('dashboard/prikaziTabelu.php');">
+                                <i class="fas fa-table"></i>Prikaz tabele</a>
                         </li>
                         <li>
-                            <a href="form.html">
-                                <i class="far fa-check-square"></i>Forms</a>
+                            <a href="#" onclick="uri('dashboard/izmenaPodataka.php');">
+                                <i class="fa fa-pencil-square"></i>Izmena podataka u tabeli</a>
                         </li>
+                        
                         <li>
-                            <a href="calendar.html">
-                                <i class="fas fa-calendar-alt"></i>Calendar</a>
+                            <a href="#" onclick="uri('dashboard/brisanjePodataka.php');">
+                                <i class="fa fa-trash"></i>Brisanje tabele/podataka iz tabele</a>
                         </li>
-                        <li>
-                            <a href="map.html">
-                                <i class="fas fa-map-marker-alt"></i>Maps</a>
+						
+                      <li>
+                            <a href="#" onclick="uri('dashboard/sqlQuery.php');">
+                                <i class="fa fa-question-circle"></i>SQL Upit</a>
                         </li>
-                     
                     </ul>
                 </div>
             </nav>
@@ -112,7 +135,7 @@ else {
                     <ul class="list-unstyled navbar__list">
                         <li class="active has-sub">
                             <a class="js-arrow animsition" href="#" onclick="uri('dashboard/uvod.php');">
-                                <i class="fas fa-tachometer-alt"></i>Dashboard</a>
+                                <i class="fas fa-home"></i>Pregled</a>
                            
                         </li>
                         <li>
@@ -120,20 +143,22 @@ else {
                                 <i class="fa fa-table"></i>Kreiranje tabele</a>
                         </li>
                         <li>
-                            <a href="#" onclick="uri('dashboard/prikazTabele.php');">
+                            <a href="#" onclick="uri('dashboard/prikaziTabelu.php');">
                                 <i class="fas fa-table"></i>Prikaz tabele</a>
                         </li>
                         <li>
-                            <a href="form.html">
-                                <i class="far fa-check-square"></i>Forms</a>
+                            <a href="#" onclick="uri('dashboard/izmenaPodataka.php');">
+                                <i class="fa fa-pencil-square"></i>Izmena podataka u tabeli</a>
                         </li>
+                        
                         <li>
-                            <a href="calendar.html">
-                                <i class="fas fa-calendar-alt"></i>Calendar</a>
+                            <a href="#" onclick="uri('dashboard/brisanjePodataka.php');">
+                                <i class="fa fa-trash"></i>Brisanje tabele/podataka iz tabele</a>
                         </li>
-                        <li>
-                            <a href="map.html">
-                                <i class="fas fa-map-marker-alt"></i>Maps</a>
+						
+                      <li>
+                            <a href="#" onclick="uri('dashboard/sqlQuery.php');">
+                                <i class="fa fa-question-circle"></i>SQL Upit</a>
                         </li>
                     </ul>
                 </nav>
