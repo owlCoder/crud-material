@@ -34,6 +34,14 @@ else {
     <link href="dashboard/vendor/perfect-scrollbar/perfect-scrollbar.css" rel="stylesheet" media="all">
 
     <link href="dashboard/css/theme.css" rel="stylesheet" media="all">
+	
+	<script>
+            function uri(url) {
+                document.getElementById('sredina').src = url;
+            }
+      </script>
+	  
+	 
 </head>
 
 <body class="animsition">
@@ -60,13 +68,13 @@ else {
                 <div class="container-fluid">
                     <ul class="navbar-mobile__list list-unstyled">
                         <li class="has-sub">
-                            <a class="js-arrow" href="dashboard.php">
+                            <a class="js-arrow animsition" href="#" onclick="uri('dashboard/uvod.php');">
                                 <i class="fas fa-tachometer-alt"></i>Dashboard</a>
                           
                         </li>
                         <li>
-                            <a href="chart.html">
-                                <i class="fas fa-chart-bar"></i>Charts</a>
+                            <a href="#" onclick="uri('dashboard/kreirTabelu.php');">
+                                <i class="fa fa-table"></i>Kreiranje tabele</a>
                         </li>
                         <li>
                             <a href="table.html">
@@ -103,17 +111,17 @@ else {
                 <nav class="navbar-sidebar">
                     <ul class="list-unstyled navbar__list">
                         <li class="active has-sub">
-                            <a class="js-arrow" href="#">
+                            <a class="js-arrow animsition" href="#" onclick="uri('dashboard/uvod.php');">
                                 <i class="fas fa-tachometer-alt"></i>Dashboard</a>
                            
                         </li>
                         <li>
-                            <a href="chart.html">
-                                <i class="fas fa-chart-bar"></i>Charts</a>
+                            <a href="#" onclick="uri('dashboard/kreirTabelu.php');">
+                                <i class="fa fa-table"></i>Kreiranje tabele</a>
                         </li>
                         <li>
-                            <a href="table.html">
-                                <i class="fas fa-table"></i>Tables</a>
+                            <a href="#" onclick="uri('dashboard/prikazTabele.php');">
+                                <i class="fas fa-table"></i>Prikaz tabele</a>
                         </li>
                         <li>
                             <a href="form.html">
@@ -181,81 +189,14 @@ else {
             <!-- HEADER DESKTOP-->
 
             <!-- MAIN CONTENT-->
-            <div class="main-content" style="min-height: 100vh !important;">
+            <div class="main-content">
                 <div class="section__content section__content--p30">
                     <div class="container-fluid">
-                        <div class="row">
-                            <div class="col-md-12">
-                                <div class="overview-wrap">
-                                    <h2 class="title-1 text-white">Pregled</h2>
-                                    
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row m-t-25">
-                            <div class="col-sm-6 col-lg-3">
-                                <div class="overview-item overview-item--c1 pb-2">
-                                    <div class="overview__inner">
-                                        <div class="overview-box clearfix">
-                                            <div class="icon pb-2">
-                                                <i class="zmdi zmdi-edit"></i>
-                                            </div>
-                                            <div class="text">
-                                                <h2>Create</h2>
-                                                <span>Kreiranje ili dodavanje novih zapisa u bazu podataka</span>
-                                            </div>
-                                        </div>
-                                        
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-sm-6 col-lg-3">
-                                <div class="overview-item overview-item--c2 pb-2">
-                                    <div class="overview__inner">
-                                        <div class="overview-box clearfix">
-                                            <div class="icon pb-2">
-                                                <i class="zmdi zmdi-book"></i>
-                                            </div>
-                                            <div class="text">
-                                                <h2>Read</h2>
-                                                <span>Čitanje, pretraga ili pregled postojećih unosa</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-sm-6 col-lg-3">
-                                <div class="overview-item overview-item--c3 pb-2">
-                                    <div class="overview__inner">
-                                        <div class="overview-box clearfix">
-                                            <div class="icon pb-2">
-                                                <i class="zmdi zmdi-refresh"></i>
-                                            </div>
-                                            <div class="text">
-                                                <h2>Update</h2>
-                                                <span>Ažuriranje ili izmena postojećih zapisa/unosa</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-sm-6 col-lg-3">
-                                <div class="overview-item overview-item--c4 pb-2">
-                                    <div class="overview__inner">
-                                        <div class="overview-box clearfix">
-                                            <div class="icon pb-2">
-                                                <i class="zmdi zmdi-delete"></i>
-                                            </div>
-                                            <div class="text">
-                                                <h2>Delete</h2>
-                                                <span>Brisanje ili uklanjanje postojećih zapisa/unosa</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-						
+					
+					<div class="embed-responsive embed-responsive-21by9">
+
+					<iframe class="animsition visinaAdapt" src="dashboard/uvod.php" id="sredina" width="100%;" style="border: 0;"></iframe>
+                    </div>
                     </div>
                 </div>
             </div>
@@ -288,6 +229,10 @@ else {
 
     <!-- Main JS-->
     <script src="dashboard/js/main.js"></script>
+	
+		<script type="text/javascript" language="javascript"> 
+			$('.embed-responsive').css('height', $(window).height()+'px');
+		</script>
 
 </body>
 
