@@ -10,7 +10,7 @@
       <link rel="stylesheet" href="css/bootstrap-utilities.min.css" />
       <link rel="stylesheet" href="css/err.css" />
 	  
-	  <meta http-equiv="refresh" content="25;url=index.php">
+	  <meta http-equiv="refresh" content="5;url=index.php">
    </head>
    <body>
    
