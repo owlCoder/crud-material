@@ -33,26 +33,6 @@ Notes:	decreasing heading by 0.4em with every subsequent heading level
 /*-----------------------------------------------------*/
 /* ----- Normalize ----- */
 
-
-::-webkit-scrollbar {
-  width: 0px;
-}
-
-/* Track */
-::-webkit-scrollbar-track {
-  background: transparent; 
-}
- 
-/* Handle */
-::-webkit-scrollbar-thumb {
-  background: transparent; 
-}
-
-/* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
-  background: transparent; 
-}
-
 * {
     margin: 0;
     padding: 0;
