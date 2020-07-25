@@ -4,6 +4,8 @@
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	  <title>CRUD Material</title>
+      <link rel="icon" href="img/fav.png" />
       <link rel="stylesheet" href="css/bootstrap.min.css" />
       <link rel="stylesheet" href="css/bootstrap-grid.min.css" />
       <link rel="stylesheet" href="css/bootstrap-reboot.min.css" />
@@ -19,7 +21,7 @@
 			<div class="wrap-login100">
 				<form class="login100-form" method="POST" action="db.php">
 					<span class="login100-form-title p-b-43">
-						CRUD Material
+					<img src="img/crud.png" height="150px"/>
 					</span>
 					
 					
