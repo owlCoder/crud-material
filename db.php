@@ -15,6 +15,11 @@ $mysqli = mysqli_connect($databaseHost, $databaseUsername, $databasePassword, $d
 
 if ($mysqli != false) {
 	$_SESSION["podatak"] = $databaseUsername;
+	$_SESSION["korIme"] = $databaseUsername;
+	$_SESSION["lozinka"] = $databasePassword;
+	$_SESSION["adresa"] = $databaseHost;
+	$_SESSION["baza"] = $databaseName;
+	
     header('Location: redok.php');
     exit;
 }

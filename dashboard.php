@@ -37,14 +37,14 @@ else {
 </head>
 
 <body class="animsition">
-    <div class="page-wrapper">
+    <div>
         <!-- HEADER MOBILE-->
         <header class="header-mobile d-block d-lg-none">
             <div class="header-mobile__bar">
                 <div class="container-fluid">
 <center>
                     <div class="header-mobile-inner">
-                        <a class="logo" href="dashboard.php">
+                        <a class="logo" href="dashboard.php" style="color: #fff;">
                            CRUD Material
                         </a>
                         <button class="hamburger hamburger--slider" type="button">
@@ -94,7 +94,7 @@ else {
         <!-- MENU SIDEBAR-->
         <aside class="menu-sidebar d-none d-lg-block"> <center> 
             <div class="logo">
-              <a href="dashboard.php">
+              <a href="dashboard.php" style="color: #fff;">
                     CRUD Material
                 </a>
             </div>
@@ -181,13 +181,13 @@ else {
             <!-- HEADER DESKTOP-->
 
             <!-- MAIN CONTENT-->
-            <div class="main-content" style="min-height: 92vh !important;">
+            <div class="main-content" style="min-height: 100vh !important;">
                 <div class="section__content section__content--p30">
                     <div class="container-fluid">
                         <div class="row">
                             <div class="col-md-12">
                                 <div class="overview-wrap">
-                                    <h2 class="title-1">Pregled</h2>
+                                    <h2 class="title-1 text-white">Pregled</h2>
                                     
                                 </div>
                             </div>
